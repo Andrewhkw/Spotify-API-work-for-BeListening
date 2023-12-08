@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Artist Name</th>
+        <th>Popularity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for artist in artists %}
+        <tr>
+          <td>{{ artist.name }}</td>
+          <td>{{ artist.popularity }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
